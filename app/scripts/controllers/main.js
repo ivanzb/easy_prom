@@ -22,4 +22,7 @@ angular.module('easyPromApp')
     	else
     	$scope.tenso='teste';
     }
+    $scope.troca = function(obj){
+    	$scope.tenso=obj;
+    }
   });

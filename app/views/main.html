@@ -1,15 +1,19 @@
 <div class="row">
-	<div class="col-md-2">
-		<ul ng-repeat="puto in awesomeThings">
-			<li>{{puto}}</li>
-		</ul>
+	<div class="col-sm-2">
+			<div class="list-group">
+				<a  ng-repeat="puto in awesomeThings" class="list-group-item {{tenso==puto?'active':''}}"  ng-click="troca(puto)">{{puto}}</a>
+			</div>
 	</div>
-	<div class="col-md-6">
-		<input type="text" ng-model="tenso" /> <label>{{tenso}}</label>
+	<div class="col-sm-7">
+		<div class="row">
+			<input type="text" ng-model="tenso" />
+		</div>
+		<div class="row">
+			<span class="label label-default">{{tenso}}</span>
+		</div>
 	</div>
-	<div class="col-md-2">
-		<span style="background-color: lightblue;"><input type="button"
-			ng-click="chamento()">teste</span>
+	<div class="col-bg-2">
+		<button class="btn btn-warning" type="button" ng-click="chamento()"><span class="glyphicon glyphicon-scissors" aria-hidden="true"/>       Teste</button>
 	</div>
 </div>
 
