@@ -1,19 +1,24 @@
-<div class="row">
-	<div class="col-sm-2">
+<div class="page-header" style="background-color:lightblue;height:200px;text-align:center;padding-top:40px;;">
+	<h1>
+		<big>Easy Prom</big> <p><small>quem sabe agora não se forma?</small></p>
+	</h1>
+</div>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-lg-2">
 			<div class="list-group">
-				<a  ng-repeat="puto in awesomeThings" class="list-group-item {{tenso==puto?'active':''}}"  ng-click="troca(puto)">{{puto}}</a>
+				<a ng-repeat="puto in awesomeThings"
+					class="list-group-item {{tenso==puto?'active':''}}"
+					ng-click="troca(puto)">{{puto}}</a>
 			</div>
-	</div>
-	<div class="col-sm-7">
-		<div class="row">
-			<input type="text" ng-model="tenso" />
 		</div>
-		<div class="row">
-			<span class="label label-default">{{tenso}}</span>
-		</div>
-	</div>
-	<div class="col-bg-2">
-		<button class="btn btn-warning" type="button" ng-click="chamento()"><span class="glyphicon glyphicon-scissors" aria-hidden="true"/>       Teste</button>
+		<div id="coluna_do_meio" class="col-lg-10">
+			<div class="row">
+				<input type="text" ng-model="tenso" />
+			</div>
+			<div class="row">
+				<span class="label label-danger">{{tenso}}</span>
+			</div>
+		</div>	
 	</div>
 </div>
-

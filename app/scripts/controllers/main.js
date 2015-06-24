@@ -10,9 +10,12 @@
 angular.module('easyPromApp')
   .controller('MainCtrl', function ($scope) {
     $scope.awesomeThings = [
-      'xar',
-      'AngularJS',
-      'Karma'
+      'Cadastro',      
+      'Alunos',
+      'Comissão',
+      'Turmas',
+      'Caixa',
+      'Promoções'
     ];
     $scope.tenso='teste';
     
@@ -25,4 +28,9 @@ angular.module('easyPromApp')
     $scope.troca = function(obj){
     	$scope.tenso=obj;
     }
+    
+    $(document).ready(function(){
+    	
+    });
+    
   });
