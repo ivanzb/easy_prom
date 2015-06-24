@@ -9,25 +9,21 @@
  */
 angular.module('easyPromApp')
   .controller('MainCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'Cadastro',      
-      'Alunos',
-      'Comissão',
-      'Turmas',
-      'Caixa',
-      'Promoções'
+    $scope.menu = [
+      {"nome":'Cadastro',"pagina":"alunos.html"},
+      {"nome":'Alunos',"pagina":"/views/alunos.html"},
+      {"nome":'Comissão',"pagina":"alunos.html"},
+      {"nome":'Turmas',"pagina":"alunos.html"},
+      {"nome":'Caixa',"pagina":"alunos.html"},
+      {"nome":'Promoções',"pagina":"alunos.html"}      
     ];
-    $scope.tenso='teste';
+    $scope.gotoPage = '';   
     
-    $scope.chamento = function(){
-    	if($scope.tenso=='teste')
-    	$scope.tenso='peido';
-    	else
-    	$scope.tenso='teste';
-    }
-    $scope.troca = function(obj){
-    	$scope.tenso=obj;
-    }
+    $scope.vaiPara = function(item){
+    	$scope.menuSelecionado=item.nome;
+    	$scope.gotoPage = item.pagina;
+    };
+   
     
     $(document).ready(function(){
     	
