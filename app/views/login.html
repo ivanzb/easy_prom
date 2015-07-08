@@ -1,0 +1,24 @@
+<div class="container">
+	<div class="row">
+		<div class="col-sm-3" />
+		<div class="col-sm-1">
+			<label for="login">Usuário</label>
+		</div>
+		<div class="col-sm-1">
+			<input id="login" type="text" ng-model="login" />
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-3" />
+		<div class="col-sm-1">
+			<label for="senha">Senha</label>
+		</div>
+		<div class="col-sm-1">
+			<input id="senha" type="password" ng-model="senha" />
+		</div>
+	</div>
+	<div class="row" style="padding-top:4px;">
+		<div class="col-sm-5" />
+		<button class="btn btn-primary" ng-click="authenticate(login,senha)">Entrar</button>
+	</div>
+</div>

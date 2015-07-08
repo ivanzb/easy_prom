@@ -22,6 +22,13 @@
     <![endif]-->   
 
     <div class="container-fluid">
+    <ng-include src="'views/alerts.html'"></ng-include>  	
+    <div class="page-header" style="background-color:lightblue;height:200px;text-align:center;padding-top:40px;;">
+	<h1>
+		<big>Easy Prom</big>
+		<p><small>quem sabe agora não se forma?</small></p>
+	</h1>
+	</div>
     <div ng-view=""></div>
     </div>
 
@@ -41,14 +48,18 @@
     <script src="bower_components/angular-route/angular-route.js"></script>
     <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
     <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <script src="bower_components/satellizer/satellizer.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
+        <script src="scripts/services/rest_helper.js"></script>
+        <script src="scripts/services/alerts.js"></script>
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/controllers/alunos.js"></script>
-        <script src="scripts/services/rest_helper.js"></script>
+        <script src="scripts/controllers/login.js"></script>
+        
         <!-- endbuild -->
 </body>
 </html>
